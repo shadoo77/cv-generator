@@ -1,0 +1,39 @@
+{
+  "env": {
+    "jest": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": [
+    "airbnb-typescript/base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "class-methods-use-this": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 100,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.test.js",
+        "*.spec.js"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-expressions": "off"
+      }
+    }
+  ]
+}
