@@ -101,8 +101,9 @@ client/public/meta.json
 client/.env*.local
 
 #API
-/.env*
-/.env.test
+.env*
+.env.test
+.env.template
 
 
 /packages/pg2elastic/.env
