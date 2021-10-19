@@ -12,7 +12,7 @@ dotenv.config({ path: newPath });
 export default Object.freeze({
   ENV_TYPE,
   DB_PASSWORD: process.env.DB_PASSWORD,
-  DB_USR: process.env.DB_USR,
+  DB_USER: process.env.DB_USER,
   DB_URL: process.env.DB_URL,
   DB_NAME: process.env.DB_NAME,
   TEST_DB_NAME: process.env.TEST_DB_NAME,

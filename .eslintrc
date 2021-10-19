@@ -9,7 +9,10 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": [
+      "./tsconfig.json",
+      // "./jest.config.ts"
+    ]
   },
   "rules": {
     "no-underscore-dangle": "off",
@@ -23,12 +26,21 @@
         "ignoreTemplateLiterals": true,
         "ignoreComments": true
       }
-    ]
+    ],
+    "consistent-return": [
+      "error",
+      {
+        "treatUndefinedAsUnspecified": true
+      }
+    ],
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": "error"
   },
   "overrides": [
     {
       "files": [
         "*.test.js",
+        "*.test.ts",
         "*.spec.js"
       ],
       "rules": {
