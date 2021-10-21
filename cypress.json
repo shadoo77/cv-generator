@@ -1,0 +1,14 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "viewportWidth": 375,
+  "viewportHeight": 812,
+  "scrollBehavior": "center",
+  "env": {
+    "API_URL": "https://localhost:5000"
+  },
+  "retries": {
+    "runMode": 3,
+    "openMode": 0
+  },
+  "video": false
+}
