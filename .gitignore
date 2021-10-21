@@ -59,9 +59,10 @@ typings/
 
 # dotenv environment variables file
 /.env
-/.env.development
-/.env.production
-/.env.test
+api/.env.development
+api/.env
+api/.env.production
+api/ormconfig.json
 
 # next.js build output
 .next
@@ -76,43 +77,39 @@ build
 .DS_Store
 
 # frontend
-client/.env.development
-client/.env.test
-client/.eslintrc.json
-client/.DS_Store
-client/.vscode
-client/theme.lock
-client/yarn.lock
-client/webpack.config.js
-client/report.html
-client/stats.json
-client/theme_old.lock
-client/theme/assets/
-client/!theme/assets/.gitkeep
-client/!theme/assets/*.liquid
-client/node_modules/
-client/prepros-6.config
-client/out/
-client/build/
-client/.idea
-client/cert
-client/public/meta.json
+frontend/.env.development
+frontend/.env.test
+frontend/.env
+frontend/.eslintrc.json
+frontend/.DS_Store
+frontend/.vscode
+frontend/theme.lock
+frontend/yarn.lock
+frontend/webpack.config.js
+frontend/report.html
+frontend/stats.json
+frontend/theme_old.lock
+frontend/theme/assets/
+frontend/!theme/assets/.gitkeep
+frontend/!theme/assets/*.liquid
+frontend/node_modules/
+frontend/prepros-6.config
+frontend/out/
+frontend/build/
+frontend/.idea
+frontend/cert
+frontend/public/meta.json
 # Temporary env files
-client/.env*.local
+frontend/.env*.local
 
 #API
-.env*
-.env.test
-
-
-/packages/pg2elastic/.env
-/packages/pg2elastic/.env.development
+api/.env*
+!api/.env.test
 
 # OS files
 .DS_Store
-/.vscode/settings.json
+api/.vscode/settings.json
 
 # Cypres generated folders
-/client/cypress/screenshots
-/client/cypress/videos
-
+cypress/screenshots
+cypress/videos

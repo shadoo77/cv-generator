@@ -1,0 +1,36 @@
+.animale-render {
+  min-height: 350px;
+  border: solid 1px $grey;
+  color: $kvk-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include xxs {
+    min-height: 250px;
+  }
+
+  &-error {
+    color: red;
+  }
+
+  &-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 33vh;
+    
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: fit-content;
+      max-height: 350px;
+      border-radius: 4px;
+
+      @include xxs {
+        min-height: 250px;
+      }
+    }
+  }
+}
