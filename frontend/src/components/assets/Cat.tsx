@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from '../automic/Search';
 import AnimaleRender from '../automic/AnimaleRender';
-import Constants from '../../constants/constants';
+import { CONSTANTS } from '../../constants/constants';
 
 function Cat() {
   return (
@@ -9,7 +9,7 @@ function Cat() {
       <div className="page-title">
         <h2>Cat page</h2>
       </div>
-      <Search animaleKind={Constants.ANIMALE_TYPE.CAT} selectedItems={Constants.CAT_LIST} />
+      <Search animaleKind={CONSTANTS.ANIMALE_TYPE.CAT} selectedItems={CONSTANTS.CAT_LIST} />
       <AnimaleRender />
     </div>
   );

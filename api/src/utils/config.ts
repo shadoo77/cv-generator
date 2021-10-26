@@ -16,4 +16,10 @@ export default Object.freeze({
   DB_URL: process.env.DB_URL,
   DB_NAME: process.env.DB_NAME,
   TEST_DB_NAME: process.env.TEST_DB_NAME,
+  ENCRYPTION_KEY: process.env.ENCRYPTION_KEY,
+  ENCRYPTION_SALT: process.env.ENCRYPTION_SALT,
+  ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET,
+  REFRESH_TOKEN_SECRET: process.env.REFRESH_TOKEN_SECRET,
+  API_BASE_URL: process.env.API_BASE_URL,
+  WEB_BASE_URL: process.env.WEB_BASE_URL,
 });

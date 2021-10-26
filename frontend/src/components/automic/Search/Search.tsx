@@ -9,7 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useAnimales } from '../../../contexts/animalesContext';
 import { isEmpty } from '../../../utils/utilitiesFunctions';
 import animaleService from '../../../services/animaleService';
-import Constants from '../../../constants/constants';
+import { CONSTANTS } from '../../../constants/constants';
 
 interface ISearchProps {
   animaleKind: string,
@@ -26,7 +26,7 @@ function Search({ animaleKind, selectedItems }: ISearchProps) {
   const [errors, setErrors] = useState<any>({});
 
   // Choose fetch method based on the animale
-  const fetchFunction = animaleKind === Constants.ANIMALE_TYPE.DOG
+  const fetchFunction = animaleKind === CONSTANTS.ANIMALE_TYPE.DOG
     ? animaleService.fetchDogsBySearchTerm
     : animaleService.fetchCatsBySearchTerm;
 
@@ -79,7 +79,7 @@ function Search({ animaleKind, selectedItems }: ISearchProps) {
   const getDataByAnimaleKind = (data: any) => {
     let imageSrc;
     let errorMessage = '';
-    if (animaleKind === Constants.ANIMALE_TYPE.DOG) {
+    if (animaleKind === CONSTANTS.ANIMALE_TYPE.DOG) {
       imageSrc = (data && data.message) || '';
     } else if (!data.length) {
       imageSrc = '';
