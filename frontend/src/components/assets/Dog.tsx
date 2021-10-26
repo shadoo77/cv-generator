@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from '../automic/Search';
 import AnimaleRender from '../automic/AnimaleRender';
-import Constants from '../../constants/constants';
+import { CONSTANTS } from '../../constants/constants';
 
 function Dog() {
   return (
@@ -9,7 +9,7 @@ function Dog() {
       <div className="page-title">
         <h2>Dog page</h2>
       </div>
-      <Search animaleKind={Constants.ANIMALE_TYPE.DOG} selectedItems={Constants.DOG_LIST} />
+      <Search animaleKind={CONSTANTS.ANIMALE_TYPE.DOG} selectedItems={CONSTANTS.DOG_LIST} />
       <AnimaleRender />
     </div>
   );
